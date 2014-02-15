@@ -1,0 +1,90 @@
+
+
+	p { font-size:16px;}
+
+$main-branding:#cc0000;
+$my-fonts:'Russo One', sans-serif;
+
+
+h1 {
+	font-family:$my-fonts;
+	color:$main-branding;
+}
+
+//font-family: 'Russo One', sans-serif;
+
+
+
+
+
+// $true-blue:#0073CF;
+
+// .button {
+// 	height:400px;
+// 	width:650px;
+// 	color:true-blue;
+// 	background-color:#000;
+
+// 	p { font-size:16px;}
+// }
+
+// $main-branding:#cc0000;
+// $my-fonts:HelveticaNeue-Light;
+
+
+// h1 {
+// 	font-family:$my-fonts;
+// 	color:$main-branding;
+// }
+
+// .button {
+// 	color:#fff;
+// 	background-color:red;
+
+// 	p { font-family:$my-fonts;}
+// }
+// // Nesting
+// nav {
+// 	ul {
+// 		margin:0;
+// 		padding:0;
+// 		list-style:none;
+// 	}
+// 	li {display:inline-block;}
+// 	span { color:purple;}
+// }
+
+// //Mixins
+// @mixin text-shadow($settings) {
+// 	-webkit-text-shadow:$settings;
+// 	-moz-text-shadow:$settings;
+// 	text-shadow: $settings;
+// }
+
+// p { @include text-shadow(1px 1px 1px #000)}
+
+
+// // Inheritance
+
+// .btn-default {
+// 	color:#fff;
+// 	border-color:#000;
+// }
+
+// .btn-success {
+// 	@extend .btn-default;
+// 	background-color:green;
+// }
+
+// .btn-danger {
+// 	@extend .btn-default;
+// 	background-color:red;
+// }
+
+
+// // Operators
+
+// h1 {font-size: 24px;
+// }
+
+// h2 {font-size: 2px/24px *100%;}
