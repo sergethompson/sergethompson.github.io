@@ -3,12 +3,17 @@
 	p { font-size:16px;}
 
 $main-branding:#cc0000;
+$main-background:#eee;
 $my-fonts:'Russo One', sans-serif;
 
 
 h1 {
 	font-family:$my-fonts;
 	color:$main-branding;
+}
+
+body {
+	background-color:$main-background;
 }
 
 //font-family: 'Russo One', sans-serif;
