@@ -12,11 +12,29 @@ h1 {
 	color:$main-branding;
 }
 
-body {
-	background-color:$main-background;
+.serge {
+	background-image: url(../public/serge.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+img {
+	border-radius: 10%;
 }
 
 //font-family: 'Russo One', sans-serif;
+
+
+
+
+
+
+
+
+
+
 
 
 

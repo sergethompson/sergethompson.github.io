@@ -5,5 +5,12 @@ h1 {
   font-family: "Russo One", sans-serif;
   color: #cc0000; }
 
-body {
-  background-color: #eeeeee; }
+.serge {
+  background: url("../public/serge.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+img {
+  border-radius: 10%; }
