@@ -6,11 +6,11 @@ h1 {
   color: #cc0000; }
 
 .space {
-  height: 20em; }
+  height: 25em; }
 
 .hi {
   border-radius: 5%;
-  height: 20em; }
+  width: 22em; }
 
 .block {
   block: inline-block; }
