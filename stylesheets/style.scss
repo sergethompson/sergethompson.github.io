@@ -19,11 +19,15 @@ h1 {
 
 .hi {
 	border-radius: 5%;
-	width: 22em;
+	width: 18em;
 }
 
 .block {
 	block: inline-block;
+}
+.fit {
+	display:block;
+overflow:auto;
 }
 
 
