@@ -10,11 +10,13 @@ $my-fonts:'Russo One', sans-serif;
 h1 {
 	font-family:$my-fonts;
 	color:$main-branding;
+	position: relative;
+
 }
 
 .space {
-	height: 25em;
-}
+  height: 20em; 
+  }
 
 
 .hi {

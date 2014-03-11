@@ -9,7 +9,7 @@
 	<meta charset="UTF-8">
 	<title>Serge Thompson</title>
 </head>
-<body class="container serge">
+<body id="serge" class="container">
 
 
 	<h1 class="animated bounceInRight">Serge Thompson</h1>
@@ -32,26 +32,33 @@
 	<div class="jumbotron fit">
   <h1>Portfolio</h1>
 	<a href="http://activity-to-do-app.herokuapp.com/">
-		<div class="col-md-4">
+		<div class="col-md-4 image">
 			<img class="hi" src="public/active.png" alt="">
 		</div>
 	</a>
 	<a href="http://cherry-timely.herokuapp.com/">
-		<div class="col-md-4">
+		<div class="col-md-4 image">
 			<img class="hi" src="public/timely.png" alt="">
 		</div>
 	</a>
-<a href="http://www.latch-app.com/">
+<!-- <a href="http://www.latch-app.com/">
 		<div class="col-md-4">
 			<img class="hi" src="public/latch.png" alt="">
+		</div>
+	</a> -->
+	<a href="http://sergethompson.com/d-quake-app/">
+		<div class="col-md-4 image">
+			<img class="hi" src="public/earthquakes.png" alt="">
 		</div>
 	</a>
 	<h1>Skills</h1>
 	<ul>
-		<li><h3>Lots</h3></li>
+		<li><h4>Programming & Markup Languages</h4><br>Ruby, JavaScript, HTML5, Handlebars, CSS
+</li>
+		<li><h4>Front-End Development</h4><br>jQuery, AJAX, Backbone, Bootstrap, Angular</li>
+		<li><h4>Back-End Development</h4><br>Ruby on Rails, Sinatra, Node</li>
+		<li><h4>Other</h4><br>PostgreSQL, MongoDB, Git, RSpec, Capybara, Mocha, TDD, Agile Development</li>
 	</ul>
-
-
 </div>
 
 
@@ -62,5 +69,6 @@
 </body>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/scripts.js"></script>
+<script>$("#serge").bind("load", function () { $(this).fadeIn("slow"); });</script>
 </html>
 
