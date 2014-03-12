@@ -14,6 +14,15 @@ h1 {
 
 }
 
+.image {
+	margin-bottom: 3em;
+	margin-top: 3em;
+}
+
+.jumbotron {
+	opacity:0.8;
+}
+
 
 
 .space {
@@ -35,7 +44,7 @@ overflow:auto;
 }
 
 
-.serge {
+#serge {
 	background: url(../public/serge.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
