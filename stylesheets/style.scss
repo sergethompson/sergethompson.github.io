@@ -1,6 +1,19 @@
+#serge {
+	background: url(../public/serge.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+}
 
+h2 {
+	font-family: 'Source Sans Pro', sans-serif;
+}
 
-	p { font-size:16px;}
+	p { 
+	font-size:16px;
+	font-family: 'Source Sans Pro', sans-serif;
+	}
 
 $main-branding:#cc0000;
 $main-background:#eee;
@@ -8,10 +21,14 @@ $my-fonts:'Russo One', sans-serif;
 
 
 h1 {
-	font-family:$my-fonts;
+	font-family: 'Source Sans Pro', sans-serif;
 	color:$main-branding;
 	position: relative;
 
+}
+
+ul {
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .image {
@@ -20,7 +37,7 @@ h1 {
 }
 
 .jumbotron {
-	opacity:0.8;
+	opacity:0.9;
 }
 
 
@@ -50,6 +67,7 @@ overflow:auto;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  
 }
 
 

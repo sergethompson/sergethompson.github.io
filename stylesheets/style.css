@@ -1,17 +1,31 @@
+#serge {
+  background: url(../public/serge.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+h2 {
+  font-family: 'Source Sans Pro', sans-serif; }
+
 p {
-  font-size: 16px; }
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif; }
 
 h1 {
-  font-family: "Russo One", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: #cc0000;
   position: relative; }
+
+ul {
+  font-family: 'Source Sans Pro', sans-serif; }
 
 .image {
   margin-bottom: 3em;
   margin-top: 3em; }
 
 .jumbotron {
-  opacity: 0.8; }
+  opacity: 0.9; }
 
 .space {
   height: 20em; }
