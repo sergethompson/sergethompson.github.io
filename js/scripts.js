@@ -54,4 +54,6 @@ function handleOrientation(event) {
   // Do stuff with the new orientation data
 };
 
+getLocation();
+
 
