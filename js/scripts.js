@@ -58,6 +58,7 @@ if( !gammaState ){
 	};
   
   	if( gammaState && domState === "OFF" ){
+  			domState = "ON";
   			$.getJSON( "http://api.openweathermap.org/data/2.5/weather?lat="+latitude+"&lon="+longitude+"", function( data ) {
   				var overlay = document.createElement("div");
   				overlay.setAttribute("id","overlay");
@@ -96,7 +97,7 @@ if( !gammaState ){
         document.getElementById("productOverlay").innerHTML=" Weather: " + 
         data.weather[0].description  + " Temp: "+ (data.main.temp * 1.8 - 459.67).toFixed(2);
 
-        domState = "ON";
+        
 
 
 	 // alert("Hello your lat lon " + latitude.toFixed(2) +" : " 
