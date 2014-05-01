@@ -36,6 +36,9 @@ function handleOrientation(event) {
   var alpha    = event.alpha;
   var beta     = event.beta;
   var gamma    = event.gamma;
+  if (gamma === -45){
+  	console.log(gamma);
+  };
 
 
   // 
