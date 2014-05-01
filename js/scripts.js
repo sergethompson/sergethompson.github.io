@@ -37,14 +37,15 @@ function handleOrientation(event) {
 	var alpha    = event.alpha;
 	var beta     = event.beta;
 	var gamma    = event.gamma;
-	var gammaState = -55 < gamma && gamma < -35;
+	var gammaState = -60 < gamma && gamma < -30;
+	var betaState = -15 < gamma && gamma < -15;
 
 
 
 // if gammaState is between two values then gammaState is true 
 // if domState is On element is appended to dom
 
-if( !gammaState && domState === "ON"){
+if( !gammaState && !betaState && domState === "ON"){
 	var elemento = document.getElementById("overlay");
 	elemento.parentNode.removeChild(elemento);
 	var elementp = document.getElementById("productOverlay");
@@ -53,7 +54,7 @@ if( !gammaState && domState === "ON"){
 
 	};
   
-  	if( gammaState && domState === "OFF" ){
+  	if( gammaState && betaState && domState === "OFF" ){
   			domState = "ON";
   			$.getJSON( "http://api.openweathermap.org/data/2.5/weather?lat="+latitude+"&lon="+longitude+"", function( data ) {
   				var overlay = document.createElement("div");
