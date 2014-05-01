@@ -51,7 +51,7 @@ function handleOrientation(event) {
   			$.getJSON( "http://api.openweathermap.org/data/2.5/weather?lat="+latitude+"&lon="+longitude+"", function( data ) {
 	 console.log(data)
 	 dataX = data;
-	 alert("Hello your lat lon" + latitude +" : " + longitude + "Temp: "(dataX.main.temp * 1.8 - 459.67));
+	 alert("Hello your lat lon" + latitude +" : " + longitude + "Temp: "+(dataX.main.temp * 1.8 - 459.67));
 	});
 
   			
