@@ -60,6 +60,7 @@ if( !gammaState ){
   	if( gammaState && domState === "OFF" ){
   			$.getJSON( "http://api.openweathermap.org/data/2.5/weather?lat="+latitude+"&lon="+longitude+"", function( data ) {
   				domState = "ON";
+  				dataX = data;
   				var overlay = document.createElement("div");
   				overlay.setAttribute("id","overlay");
   				overlay.setAttribute("class", "overlay");
