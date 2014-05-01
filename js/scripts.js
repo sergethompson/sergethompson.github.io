@@ -93,7 +93,7 @@ if( !gammaState  && domState === "ON"){
         document.body.appendChild(productOverlay);
         document.getElementById("productOverlay").innerHTML="Weather: " + data.weather[0].description
           + "<br>" + "Temp: " + (data.main.temp * 1.8 - 459.67).toFixed(2) + " Location: " + data.name +
-          "<br> You Won a Free Guinness! CODE: 2400" ;
+          "<br> You Won a Free Guinness! CODE: "+ Math.floor((Math.random() * 10000) + 1);
 
         
 
