@@ -48,18 +48,17 @@ function handleOrientation(event) {
 // if gammaState is between two values then gammaState is true 
 // if domState is On element is appended to dom
 
-if( !gammaState ){
-	domState = "OFF";
+if( !gammaState && domState === "ON" ){
 	var elemento = document.getElementById("overlay");
 	elemento.parentNode.removeChild(elemento);
 	var elementp = document.getElementById("productOverlay");
 	elementp.parentNode.removeChild(elementp);
+	domState = "OFF";
 
 	};
   
   	if( gammaState && domState === "OFF" ){
   			$.getJSON( "http://api.openweathermap.org/data/2.5/weather?lat="+latitude+"&lon="+longitude+"", function( data ) {
-  				domState = "ON";
   				var overlay = document.createElement("div");
   				overlay.setAttribute("id","overlay");
   				overlay.setAttribute("class", "overlay");
@@ -97,9 +96,7 @@ if( !gammaState ){
         document.getElementById("productOverlay").innerHTML=" Weather: " + 
         data.weather[0].description  + " Temp: "+ (data.main.temp * 1.8 - 459.67).toFixed(2);
 
-
-
-
+        domState = "ON";
 
 
 	 // alert("Hello your lat lon " + latitude.toFixed(2) +" : " 
