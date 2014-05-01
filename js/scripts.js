@@ -60,7 +60,6 @@ if( !gammaState ){
   	if( gammaState && domState === "OFF" ){
   			$.getJSON( "http://api.openweathermap.org/data/2.5/weather?lat="+latitude+"&lon="+longitude+"", function( data ) {
   				domState = "ON";
-  				dataX = data;
   				var overlay = document.createElement("div");
   				overlay.setAttribute("id","overlay");
   				overlay.setAttribute("class", "overlay");
@@ -74,8 +73,6 @@ if( !gammaState ){
   				overlay.style.left="0";
   				overlay.style.filter="alpha(opacity=70)";
   				document.body.appendChild(overlay);
-  				console.log(data)
-  				dataX = data;
 
 
 
@@ -98,7 +95,7 @@ if( !gammaState ){
         productOverlay.style.marginTop="-80px";
         document.body.appendChild(productOverlay);
         document.getElementById("productOverlay").innerHTML=" Weather: " + 
-        dataX.weather[0].description  + " Temp: "+ (dataX.main.temp * 1.8 - 459.67).toFixed(2);
+        data.weather[0].description  + " Temp: "+ (data.main.temp * 1.8 - 459.67).toFixed(2);
 
 
 
@@ -148,9 +145,9 @@ getLocation();
 //   		}, 3000);
 
 
-$.getJSON( "http://api.openweathermap.org/data/2.5/weather?lat=41.04543&lon=-73.57633", function( data ) {
-	console.log(data);
-	dataX = data;
-});
+// $.getJSON( "http://api.openweathermap.org/data/2.5/weather?lat=41.04543&lon=-73.57633", function( data ) {
+// 	console.log(data);
+// 	dataX = data;
+// });
 
 
