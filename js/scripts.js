@@ -67,10 +67,10 @@ function handleOrientation(event) {
 };
 
 getLocation();
-setTimeout(function(){
-	alert("Hello Serge your lat lon");
-  			countDown = false;
-  		}, 3000);
+// setTimeout(function(){
+// 	alert("Hello Serge your lat lon");
+//   			countDown = false;
+//   		}, 3000);
 
 
 $.getJSON( "http://api.openweathermap.org/data/2.5/weather?lat=41.04543&lon=-73.57633", function( data ) {
