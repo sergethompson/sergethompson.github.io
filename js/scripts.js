@@ -85,9 +85,9 @@ if( !gammaState ){
         productOverlay.setAttribute("class", "productOverlay");
         productOverlay.style.backgroundColor="#4bccff";
         productOverlay.style.color="white";
-        // productOverlay.style.fontFamily='Source Sans Pro';
+        productOverlay.style.fontFamily='Source Sans Pro';
         productOverlay.style.textAlign="center";
-        productOverlay.style.fontSize="10px";
+        productOverlay.style.fontSize="15px";
         productOverlay.style.position="fixed";
         productOverlay.style.width="520px";
         productOverlay.style.height="160px";
