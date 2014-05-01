@@ -97,8 +97,8 @@ if( !gammaState ){
         productOverlay.style.marginLeft="-260px";
         productOverlay.style.marginTop="-80px";
         document.body.appendChild(productOverlay);
-        document.getElementById("productOverlay").innerHTML="<br>" +" Weather: " + 
-        dataX.weather[0].description + "<br>" +"<br>" + " Temp: "+ (dataX.main.temp * 1.8 - 459.67).toFixed(2);
+        document.getElementById("productOverlay").innerHTML=" Weather: " + 
+        dataX.weather[0].description  + " Temp: "+ (dataX.main.temp * 1.8 - 459.67).toFixed(2);
 
 
 
