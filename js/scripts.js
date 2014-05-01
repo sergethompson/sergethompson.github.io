@@ -91,9 +91,33 @@ var overlay = document.createElement("div");
 
 
 
-	 alert("Hello your lat lon " + latitude.toFixed(2) +" : " 
+	 // alert("Hello your lat lon " + latitude.toFixed(2) +" : " 
+	 // 	+ longitude.toFixed(2) + " Temp: "+(dataX.main.temp * 1.8 - 459.67).toFixed(2)
+	 // 	 +" Weather: "+dataX.weather[0].description);
+
+
+
+var r=confirm("Hello your lat lon " + latitude.toFixed(2) +" : " 
 	 	+ longitude.toFixed(2) + " Temp: "+(dataX.main.temp * 1.8 - 459.67).toFixed(2)
 	 	 +" Weather: "+dataX.weather[0].description);
+if (r==true)
+  {
+  	 		var elemento = document.getElementById("overlay");
+		elemento.parentNode.removeChild(elemento);
+  }
+else
+  {
+  
+  };
+
+
+
+
+
+
+
+
+
 	 // 		var elemento = document.getElementById("overlay");
 		// elemento.parentNode.removeChild(elemento);
 	});
