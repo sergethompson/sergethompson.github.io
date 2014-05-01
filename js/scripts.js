@@ -38,7 +38,7 @@ function handleOrientation(event) {
 	var beta     = event.beta;
 	var gamma    = event.gamma;
 	var gammaState = -60 < gamma && gamma < -30;
-	var betaState = -15 < gamma && gamma < -15;
+	var betaState = -15 < beta && beta < -15;
 
 
 
