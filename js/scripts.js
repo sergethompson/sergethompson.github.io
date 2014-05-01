@@ -62,3 +62,6 @@ setTimeout(function(){alert("Hello Serge your lat lon");
   			countDown = false;
   		}, 3000);
 
+
+
+
