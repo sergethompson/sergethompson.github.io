@@ -37,14 +37,14 @@ function handleOrientation(event) {
   var beta     = event.beta;
   var gamma    = event.gamma;
   
-  	console.log(gamma);
+  	
 
 
 
   // 
 
   if (!countDown) {
-  	if(-55 < gamma < -35){
+  	if(-55 < gamma && gamma < -35){
   		setTimeout(function(){alert("Hello Serge your lat lon" + latitude +" : " + longitude);
   			countDown = false;
   		}, 3000);
