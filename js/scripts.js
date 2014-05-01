@@ -48,7 +48,7 @@ function handleOrientation(event) {
 // if gammaState is between two values then gammaState is true 
 // if domState is On element is appended to dom
 
-if( !gammaState && domState === "ON" ){
+if( !gammaState ){
 	domState = "OFF";
 	var elemento = document.getElementById("overlay");
 	elemento.parentNode.removeChild(elemento);
