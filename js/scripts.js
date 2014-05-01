@@ -80,15 +80,15 @@ if( !gammaState && domState === "ON"){
         productOverlay.style.color="white";
         productOverlay.style.fontFamily='Source Sans Pro';
         productOverlay.style.textAlign="center";
-        productOverlay.style.fontSize="20px";
+        productOverlay.style.fontSize="30px";
         productOverlay.style.position="fixed";
-        productOverlay.style.width="520px";
-        productOverlay.style.height="160px";
+        productOverlay.style.width="650px";
+        productOverlay.style.height="250px";
         productOverlay.style.zIndex="1010";
         productOverlay.style.top="50%";
         productOverlay.style.left="50%";
-        productOverlay.style.marginLeft="-260px";
-        productOverlay.style.marginTop="-80px";
+        productOverlay.style.marginLeft="-325px";
+        productOverlay.style.marginTop="-125px";
         document.body.appendChild(productOverlay);
         document.getElementById("productOverlay").innerHTML="Weather: " + data.weather[0].description
           + "<br>" + "Temp: " + (data.main.temp * 1.8 - 459.67).toFixed(2) + " Location: " + data.name +
