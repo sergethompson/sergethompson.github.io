@@ -1,6 +1,7 @@
 var latitude;
 var longitude;
 var countDown = false;
+var dataX;
 
 $( window ).scroll(function() {
   var scroll = $(window).scrollTop();
@@ -43,9 +44,17 @@ function handleOrientation(event) {
 
   // 
 
+  
   if (!countDown) {
   	if(-55 < gamma && gamma < -35){
-  		setTimeout(function(){alert("Hello Serge your lat lon" + latitude +" : " + longitude);
+  		setTimeout(function(){
+  			$.getJSON( "http://api.openweathermap.org/data/2.5/weather?lat="+latitude+"&lon="+longitude+"", function( data ) {
+	 console.log(data)
+	 dataX = data;
+	 alert("Hello your lat lon" + latitude +" : " + longitude + "Temp: "(dataX.main.temp * 1.8 - 459.67));
+	});
+
+  			
   			countDown = false;
   		}, 3000);
   		countDown = true;
@@ -58,10 +67,15 @@ function handleOrientation(event) {
 };
 
 getLocation();
-setTimeout(function(){alert("Hello Serge your lat lon");
+setTimeout(function(){
+	alert("Hello Serge your lat lon");
   			countDown = false;
   		}, 3000);
 
 
+// $.getJSON( "http://api.openweathermap.org/data/2.5/weather?lat=41.04543&lon=-73.57633", function( data ) {
+// 	 console.log(data);
+// 	 dataX = data;
+// });
 
 
