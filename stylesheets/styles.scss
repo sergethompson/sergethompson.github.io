@@ -1,0 +1,78 @@
+strong {
+	color: black;
+}
+
+.tone0 {
+	background-color: #F0F0F4;
+
+	
+
+}
+
+.tone1 {
+	background-color: #F0F0F0;
+	}
+
+.tone2 {
+	background-color: #F0F0F8;
+	
+}
+
+.infobox {
+	width: 48%;
+	margin: 0px;
+	display:inline-block;
+	background-color: #00CCFF;
+	color: white;
+	height: 2em;
+	padding-top: 1em;
+	text-align: center;
+	font-size: 1.5em;
+	float: left;
+	font-family: 'Exo 2', 'sans-serif';
+
+}
+
+.clicked {
+	background-color: #F0F0F0;
+	color: black;
+
+
+}
+
+.container {
+	width: 100%;
+	min-width: 860px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.box {
+	display:inline-block;
+	margin: 0px;
+	width: 32%;
+	padding-top: 1em;
+	min-height: 25em;
+	color: #00CCFF;
+	font-family: 'Exo 2', 'sans-serif';
+}
+
+.text {
+	color: grey;
+}
+
+.large {
+	font-size: 5em;
+}
+
+@media all and (max-width: 1025px) {
+.large {
+    font-size: 2.5em;
+  }
+
+.small {
+	font-size: .8em;
+}
+
