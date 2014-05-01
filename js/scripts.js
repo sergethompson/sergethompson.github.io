@@ -85,9 +85,9 @@ if( !gammaState ){
         productOverlay.setAttribute("class", "productOverlay");
         productOverlay.style.backgroundColor="#4bccff";
         productOverlay.style.color="white";
-        productOverlay.style.fontFamily='Source Sans Pro';
+        // productOverlay.style.fontFamily='Source Sans Pro';
         productOverlay.style.textAlign="center";
-        productOverlay.style.fontSize="30px";
+        productOverlay.style.fontSize="10px";
         productOverlay.style.position="fixed";
         productOverlay.style.width="520px";
         productOverlay.style.height="160px";
@@ -97,8 +97,7 @@ if( !gammaState ){
         productOverlay.style.marginLeft="-260px";
         productOverlay.style.marginTop="-80px";
         document.body.appendChild(productOverlay);
-        // document.getElementById("productOverlay").innerHTML="<br>" +" Weather: " + 
-        // "<br>" +"<br>" + " Temp: ";
+        document.getElementById("productOverlay").innerHTML=" Weather: " +  " Temp: ";
         // document.getElementById("productOverlay").innerHTML="<br>" +" Weather: " + 
         // dataX.weather[0].description + "<br>" +"<br>" + " Temp: "+ (dataX.main.temp * 1.8 - 459.67).toFixed(2);
 
