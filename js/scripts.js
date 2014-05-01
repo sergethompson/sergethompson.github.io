@@ -49,10 +49,7 @@ function handleOrientation(event) {
   	if(-55 < gamma && gamma < -35){
   		setTimeout(function(){
   			$.getJSON( "http://api.openweathermap.org/data/2.5/weather?lat="+latitude+"&lon="+longitude+"", function( data ) {
-	 console.log(data)
-	 dataX = data;
-
-var overlay = document.createElement("div");
+	 var overlay = document.createElement("div");
         overlay.setAttribute("id","overlay");
         overlay.setAttribute("class", "overlay");
         overlay.style.position="fixed";
@@ -65,6 +62,10 @@ var overlay = document.createElement("div");
         overlay.style.left="0";
         overlay.style.filter="alpha(opacity=70)";
         document.body.appendChild(overlay);
+	 console.log(data)
+	 dataX = data;
+
+
 
 
         // var productOverlay = document.createElement("div");
