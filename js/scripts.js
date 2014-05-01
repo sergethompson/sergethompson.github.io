@@ -38,10 +38,6 @@ function handleOrientation(event) {
 	var beta     = event.beta;
 	var gamma    = event.gamma;
 	var gammaState = -55 < gamma && gamma < -35;
-// if the trigger is false when this will run first if
-// trigger is set to false when gamma is not (-55 < gamma && gamma < -35 )
-// state controls multiple iterations of a dom element when append happens (state = true)
-//trigger is set to true when gamma is (-55 < gamma && gamma < -35 )
 
 
 
@@ -84,7 +80,7 @@ if( !gammaState && domState === "ON"){
         productOverlay.style.color="white";
         productOverlay.style.fontFamily='Source Sans Pro';
         productOverlay.style.textAlign="center";
-        productOverlay.style.fontSize="15px";
+        productOverlay.style.fontSize="30px";
         productOverlay.style.position="fixed";
         productOverlay.style.width="520px";
         productOverlay.style.height="160px";
@@ -94,8 +90,8 @@ if( !gammaState && domState === "ON"){
         productOverlay.style.marginLeft="-260px";
         productOverlay.style.marginTop="-80px";
         document.body.appendChild(productOverlay);
-        document.getElementById("productOverlay").innerHTML=" Weather: " + 
-        data.weather[0].description  + " Temp: "+ (data.main.temp * 1.8 - 459.67).toFixed(2);
+        document.getElementById("productOverlay").innerHTML="<br>" + "Weather: " + data.weather[0].description
+          + "<br>" +"<br>" + "Temp: " + (data.main.temp * 1.8 - 459.67).toFixed(2);
 
         
 
