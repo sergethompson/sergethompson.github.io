@@ -39,6 +39,7 @@ function handleOrientation(event) {
 	var gamma    = event.gamma;
 	var gammaState = -60 < gamma && gamma < -30;
 	var betaState = -15 < beta && beta < 15;
+	var gammaStateToo = 30 < gamma && gamma < 60;
 
 
 
@@ -54,7 +55,7 @@ if( !gammaState  && domState === "ON"){
 
 	};
   
-  	if( gammaState && betaState && domState === "OFF" ){
+  	if( (gammaStateToo || gammaState) && betaState && domState === "OFF" ){
   			domState = "ON";
   			$.getJSON( "http://api.openweathermap.org/data/2.5/weather?lat="+latitude+"&lon="+longitude+"", function( data ) {
   				var overlay = document.createElement("div");
