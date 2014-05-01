@@ -42,7 +42,7 @@ function handleOrientation(event) {
 
   if (!countDown) {
   	if(-55 < gamma < -35){
-  		setTimeout(function(){alert("Hello Serge your lat lon" + latitude " : " + longitude)
+  		setTimeout(function(){alert("Hello Serge your lat lon" + latitude +" : " + longitude)
   			countDown = false;
   		}, 3000);
   		countDown = true;
