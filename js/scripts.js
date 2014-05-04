@@ -126,11 +126,10 @@ var fillIn = function(selection){
 		dataJson = data;
 		$("#bikeRides").empty();
 		$.each( dataJson[selection], function( i, l ){
-			console.log(i);
-			$("#bikeRides").append( "<div class='tone" + i+ " box'><ul><li class='large'>"   +l.count + "</li>" +
-				"<li><strong>"+l.name + "</strong></li><br><br>" + 
-				"<li class='text'>"+l.location_city+ "</li>" +
-				"<li class='small'>"+l.max_speed + "</li></ul></div>");
+			$("#bikeRides").append( "<ul><li>"   +l.count + "</li>" +
+				"<li><strong>"+l.name + "</strong></li>" + 
+				"<li>"+l.location_city+ "</li>" +
+				"<li>"+l.max_speed + "</li></ul>");
 		});
 	});
 }
