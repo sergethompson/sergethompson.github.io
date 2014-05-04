@@ -124,6 +124,7 @@ var dataJson;
 var fillIn = function(selection){
 	$.getJSON( 'js/bike_ride_json.js', function( data ) {
 		dataJson = data;
+		console.log("anything");
 		$("#bikeRides").empty();
 		$.each( dataJson[selection], function( i, l ){
 			$("#bikeRides").append( "<ul><li>"   +l.count + "</li>" +
