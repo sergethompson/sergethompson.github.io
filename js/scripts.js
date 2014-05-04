@@ -104,5 +104,41 @@ if( (gammaStateToo || gammaState) && betaState && domState === "OFF" ){
 
 getLocation();
 
+///////////////////////bike data json file
+var dataJson;
+
+// allows for click to retreive information specific to that category and adds propper highlighting
+// $( "#summary" ).click(function() {
+// 	fillIn(0);
+// 	$( "#summary" ).addClass( "clicked" );
+// 	$( "#page" ).removeClass( "clicked" );
+// });
+// // allows for click to retreive information specific to that category and adds propper highlighting
+// $( "#page" ).click(function() {
+// 	fillIn(1);
+// 	$( "#page" ).addClass( "clicked" );
+// 	$( "#summary" ).removeClass( "clicked" );
+// });
+
+// gets data from json file then empties and appends information to dom
+var fillIn = function(selection){
+	$.getJSON( 'js/bike_ride_json.js', function( data ) {
+		dataJson = data;
+		// $("#container").empty();
+		// $.each( dataJson[selection], function( i, l ){
+		// 	console.log(i);
+		// 	$("#container").append( "<div class='tone" + i+ " box'><ul><li class='large'>"   +l.count + "</li>" +
+		// 		"<li><strong>"+l.countTxt + "</strong></li><br><br>" + 
+		// 		"<li class='text'>"+l.participantsTxt + "</li>" +
+		// 		"<li class='small'>"+l.participantCount + "</li></ul></div>");
+		// });
+		// $(".tone0 ul").prepend("<li><i class='fa fa-bullseye fa-2x'></i></li>");
+		// $(".tone1 ul").prepend("<li><i class='fa fa-users fa-2x'></i></li>");
+		// $(".tone2 ul").prepend("<li><i class='fa fa-clock-o fa-2x'></i></li>");
+	});
+}
+
+fillIn();
+
 
 
