@@ -121,7 +121,7 @@ var dataJson;
 // });
 
 // gets data from json file then empties and appends information to dom
-var fillIn = function(selection){
+var fillIn = function(){
 	$.getJSON( 'js/bike_ride_json.js', function( data ) {
 		dataJson = data;
 		console.log("anything");
