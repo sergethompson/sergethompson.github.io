@@ -139,31 +139,10 @@ var fillIn = function(){
 fillIn();
 
 
-$.getJSON( "http://bizwebalerts.herokuapp.com/messages/1.json", function( data ) {
+$.getJSON( "http://bizwebalerts.herokuapp.com/messages/1?callback=?", function( data ) {
 	console.log(data)
 
  });
-
-
-$.ajax({
-    url: "http://bizwebalerts.herokuapp.com/messages/1.json",
- 
-    // the name of the callback parameter, as specified by the YQL service
-    // jsonp: "callback",
- 
-    // tell jQuery we're expecting JSONP
-    dataType: "json",
- 
-    // tell YQL what we want and that we want JSON
-    // data: {
-    //     format: "json"
-    // },
- 
-    // work with the response
-    success: function( response ) {
-        console.log( response ); // server response
-    }
-});
 
 
 
