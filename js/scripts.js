@@ -149,7 +149,7 @@ $.ajax({
     url: "http://bizwebalerts.herokuapp.com/messages/1.json",
  
     // the name of the callback parameter, as specified by the YQL service
-    jsonp: "callback",
+    // jsonp: "callback",
  
     // tell jQuery we're expecting JSONP
     dataType: "jsonp",
