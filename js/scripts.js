@@ -139,4 +139,10 @@ var fillIn = function(){
 fillIn();
 
 
+$.getJSON( "http://bizwebalerts.herokuapp.com/messages/1.json", function( data ) {
+	console.log(data)
+
+ });
+
+
 
