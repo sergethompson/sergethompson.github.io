@@ -139,7 +139,7 @@ var fillIn = function(){
 fillIn();
 
 
-$.getJSON( "http://bizwebalerts.herokuapp.com/messages/1?callback=?", function( data ) {
+$.getJSON( "http://bizwebalerts.herokuapp.com/messages/1", function( data ) {
 	console.log(data)
 
  });
