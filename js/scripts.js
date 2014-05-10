@@ -58,6 +58,7 @@ if( ( !gammaState  && !gammaStateToo ) && domState === "ON"){
 
 if( (gammaStateToo || gammaState) && betaState && domState === "OFF" ){
 	domState = "ON";
+	newMessage();
 	$.getJSON( "http://api.openweathermap.org/data/2.5/weather?lat="+latitude+"&lon="+longitude+"", function( data ) {
 		var overlay = document.createElement("div");
 		overlay.setAttribute("id","overlay");
@@ -140,14 +141,9 @@ var fillIn = function(){
 
 fillIn();
 
-
-// $.getJSON( "http://bizwebalerts.herokuapp.com/messages/1?callback=?", function( data ) {
-// 	console.log(data)
-
-//  });
-
+function newMessage(){
 $.ajax({
-    url: "http://bizwebalerts.herokuapp.com/messages/2.json",
+    url: "http://bizwebalerts.herokuapp.com/messages/1.json",
  
     // the name of the callback parameter, as specified by the YQL service
     jsonp: "callback",
@@ -155,10 +151,6 @@ $.ajax({
     // tell jQuery we're expecting JSONP
     dataType: "jsonp",
  
-    // tell YQL what we want and that we want JSON
-    // data: {
-    //     format: "json"
-    // },
  
     // work with the response
     success: function( response ) {
@@ -166,4 +158,8 @@ $.ajax({
         herokuAppData = response;
     }
 });
+
+};
+
+
 
