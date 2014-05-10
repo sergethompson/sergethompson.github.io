@@ -2,6 +2,7 @@ var latitude;
 var longitude;
 var dataX;
 var domState = "OFF";
+var herokuAppData;
 
 $( window ).scroll(function() {
 	var scroll = $(window).scrollTop();
@@ -94,7 +95,8 @@ if( (gammaStateToo || gammaState) && betaState && domState === "OFF" ){
 		document.body.appendChild(productOverlay);
 		document.getElementById("productOverlay").innerHTML="Weather: " + data.weather[0].description
 		+ "<br>" + "Temp: " + (data.main.temp * 1.8 - 459.67).toFixed(2) + " Location: " + data.name +
-		"<br><br> You Won a Free Guinness! CODE: "+ Math.floor((Math.random() * 10000) + 1);
+		"<br><br> You Won a Free Guinness! CODE: "+ Math.floor((Math.random() * 10000) + 1) +
+		"<br> herokuAppData: Body:" +  herokuAppData.body;
 	});
 };
 
@@ -161,6 +163,7 @@ $.ajax({
     // work with the response
     success: function( response ) {
         console.log( response ); // server response
+        herokuAppData = response;
     }
 });
 
