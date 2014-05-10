@@ -155,9 +155,9 @@ $.ajax({
     dataType: "jsonp",
  
     // tell YQL what we want and that we want JSON
-    data: {
-        format: "json"
-    },
+    // data: {
+    //     format: "json"
+    // },
  
     // work with the response
     success: function( response ) {
