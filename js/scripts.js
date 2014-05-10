@@ -152,7 +152,7 @@ $.ajax({
     // jsonp: "callback",
  
     // tell jQuery we're expecting JSONP
-    dataType: "jsonp",
+    dataType: "json",
  
     // tell YQL what we want and that we want JSON
     // data: {
