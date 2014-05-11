@@ -80,8 +80,8 @@ if( (gammaStateToo || gammaState) && betaState && domState === "OFF" ){
 		var productOverlay = document.createElement("div");
 		productOverlay.setAttribute("id","productOverlay");
 		productOverlay.setAttribute("class", "productOverlay");
-		productOverlay.style.backgroundColor="#4bccff";
-		productOverlay.style.color="white";
+		productOverlay.style.backgroundColor=herokuAppData.backgroundcolor; //"#4bccff";
+		productOverlay.style.color=herokuAppData.textcolor; //"white";
 		productOverlay.style.fontFamily='Source Sans Pro';
 		productOverlay.style.textAlign="center";
 		productOverlay.style.fontSize="30px";
