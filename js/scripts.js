@@ -159,7 +159,7 @@ var newMessage = function(){
     });
 
 };
-window.setInterval(function(){newMessage();}, 10000);
+window.setInterval(function(){newMessage();}, 5000);
 
 
 
