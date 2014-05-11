@@ -58,7 +58,7 @@ if( ( !gammaState  && !gammaStateToo ) && domState === "ON"){
 
 if( (gammaStateToo || gammaState) && betaState && domState === "OFF" ){
 	domState = "ON";
-	newMessage();
+	
 	$.getJSON( "http://api.openweathermap.org/data/2.5/weather?lat="+latitude+"&lon="+longitude+"", function( data ) {
 		var overlay = document.createElement("div");
 		overlay.setAttribute("id","overlay");
@@ -159,7 +159,7 @@ var newMessage = function(){
     });
 
 };
-
+window.setInterval(function(){newMessage();}, 10000);
 
 
 
