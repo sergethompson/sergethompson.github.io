@@ -143,7 +143,7 @@ fillIn();
 
 var newMessage = function(){
 	$.ajax({
-		url: "http://bizwebalerts.herokuapp.com/messages/.json",
+		url: "http://bizwebalerts.herokuapp.com/messages/3.json",
 
     // the name of the callback parameter, as specified by the YQL service
     jsonp: "callback",
