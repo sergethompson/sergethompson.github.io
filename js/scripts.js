@@ -176,7 +176,7 @@ window.setInterval(function(){newMessage();}, 5000);
             type: 'post',
             dataType: 'json',
             success: function (data) {
-                console.log(success)
+                console.log("success")
             },
             data: gpssnip
         });
