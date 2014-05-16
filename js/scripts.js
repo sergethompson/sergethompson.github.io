@@ -162,4 +162,27 @@ var newMessage = function(){
 window.setInterval(function(){newMessage();}, 5000);
 
 
+  function send() {
+        var gpssnip = {
+            latitude: latitude,
+            longitude: longitude,
+            time:"late"
+        }
+
+        
+
+        $.ajax({
+            url: 'http://bizwebalerts.herokuapp.com/api/gpssnip',
+            type: 'post',
+            dataType: 'json',
+            success: function (data) {
+                console.log(success)
+            },
+            data: gpssnip
+        });
+    };
+
+    send();
+
+
 
