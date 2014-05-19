@@ -181,7 +181,7 @@ window.setInterval(function(){newMessage();}, 5000);
             success: function (data) {
                 console.log("success")
             },
-            data: gpssnip
+            data: JSON.stringify(gpssnip)
         });
     };
 
