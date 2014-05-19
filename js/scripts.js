@@ -167,8 +167,8 @@ window.setInterval(function(){newMessage();}, 5000);
 
   function send(lat, long) {
         var gpssnip = {
-            latitude: lat,
-            longitude: long,
+            latitude:lat,
+            longitude:long,
             time:"late"
         }
 
