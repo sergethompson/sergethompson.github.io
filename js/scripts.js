@@ -21,6 +21,8 @@ function getLocation()
 	}
 	else{console.log("Geolocation is not supported by this browser.");}
 }
+
+
 function showPosition(position)
 {
 	latitude = position.coords.latitude;
@@ -159,13 +161,14 @@ var newMessage = function(){
     });
 
 };
+
 window.setInterval(function(){newMessage();}, 5000);
 
 
   function send() {
         var gpssnip = {
-            latitude: latitude,
-            longitude: longitude,
+            lat: latitude,
+            long: longitude,
             time:"late"
         }
 
@@ -182,7 +185,7 @@ window.setInterval(function(){newMessage();}, 5000);
         });
     };
 
-    send();
+    send(latitude, longitude);
 
 
 
