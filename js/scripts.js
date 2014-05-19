@@ -165,10 +165,10 @@ var newMessage = function(){
 window.setInterval(function(){newMessage();}, 5000);
 
 
-  function send() {
+  function send(lat, long) {
         var gpssnip = {
-            lat: latitude,
-            long: longitude,
+            latitude: lat,
+            longitude: long,
             time:"late"
         }
 
