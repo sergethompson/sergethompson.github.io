@@ -176,13 +176,27 @@ window.setInterval(function(){newMessage();}, 5000);
 
         $.ajax({
             url: 'http://bizwebalerts.herokuapp.com/api/gpssnip',
-            type: 'post',
-            dataType: 'json',
+            type: 'POST',
+            // dataType: 'json',
+            data: { gpssnip: { latitude: 99.99, longitude: 11.11, time: "late"} },
             success: function (data) {
                 console.log("success")
-            },
-            data: JSON.stringify(gpssnip)
+            }
+            
         });
+
+
+  // $.ajax({
+  //     type: "POST",
+  //     url: "/products",
+  //     data: { product: { name: "Filip", description: "whatever" } },
+  //     success:(data) ->
+  //       alert data.id
+  //       return false
+  //     error:(data) ->
+  //       return false
+  //   })
+
     };
 
     send(latitude, longitude);
