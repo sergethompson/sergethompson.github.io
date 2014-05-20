@@ -149,10 +149,10 @@ var newMessage = function(){
 };
 
 window.setInterval(function(){
-	//newMessage();
-	sendgps();
+	newMessage();
+	//sendgps();
 
-}, 2000);
+}, 5000);
 
 
   function sendgps() {
@@ -164,7 +164,7 @@ window.setInterval(function(){
         $.ajax({
             url: 'http://gpsapi.herokuapp.com/api/gpssnip',
             type: 'POST',
-            data: { gpssnip: { lat: latitude, long: longitude, time: "late"} },
+            data: { gpssnip: { lat: 998798, long: 9789978798, time: "time now"} },
             success: function (data) {
                 console.log("success")
             } 
