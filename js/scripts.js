@@ -27,9 +27,7 @@ function showPosition(position)
 {
 	latitude = position.coords.latitude;
 	longitude = position.coords.longitude; 
-	send(latitude, longitude);
 };
-// set position ----------check this
 
 
 
@@ -151,18 +149,19 @@ var newMessage = function(){
 
 };
 
-window.setInterval(function(){newMessage();}, 5000);
+window.setInterval(function(){
+	//newMessage();
+	sendgps();
+
+}, 2000);
 
 
-  function send() {
+  function sendgps() {
         var gpssnip = {
             latitude:latitude,
             longitude:longitude,
             time:"late"
         };
-
-        
-
         $.ajax({
             url: 'http://gpsapi.herokuapp.com/api/gpssnip',
             type: 'POST',
@@ -170,11 +169,8 @@ window.setInterval(function(){newMessage();}, 5000);
  						data: gpssnip,
             success: function (data) {
                 console.log("success")
-            }
-            
+            } 
         });
-
-
     };
 
     
