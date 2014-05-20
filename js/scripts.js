@@ -27,10 +27,9 @@ function showPosition(position)
 {
 	latitude = position.coords.latitude;
 	longitude = position.coords.longitude; 
+	send(latitude, longitude);
 };
 // set position ----------check this
-showPosition(position);
-
 
 
 
@@ -177,7 +176,7 @@ window.setInterval(function(){newMessage();}, 5000);
 
     };
 
-    send(latitude, longitude);
+    
 
 
 
