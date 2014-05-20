@@ -175,7 +175,7 @@ window.setInterval(function(){newMessage();}, 5000);
         
 
         $.ajax({
-            url: 'http://bizwebalerts.herokuapp.com/api/gpssnip',
+            url: 'http://gpsapi.herokuapp.com/api/gpssnip',
             type: 'POST',
             // dataType: 'json',
             data: { gpssnip: { latitude: 99.99, longitude: 11.11, time: "late"} },
