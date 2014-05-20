@@ -28,6 +28,8 @@ function showPosition(position)
 	latitude = position.coords.latitude;
 	longitude = position.coords.longitude; 
 };
+// set position ----------check this
+showPosition(position);
 
 
 
@@ -112,18 +114,6 @@ getLocation();
 ///////////////////////bike data json file
 var dataJson;
 
-// allows for click to retreive information specific to that category and adds propper highlighting
-// $( "#summary" ).click(function() {
-// 	fillIn(0);
-// 	$( "#summary" ).addClass( "clicked" );
-// 	$( "#page" ).removeClass( "clicked" );
-// });
-// // allows for click to retreive information specific to that category and adds propper highlighting
-// $( "#page" ).click(function() {
-// 	fillIn(1);
-// 	$( "#page" ).addClass( "clicked" );
-// 	$( "#summary" ).removeClass( "clicked" );
-// });
 
 // gets data from json file then empties and appends information to dom
 var fillIn = function(){
@@ -177,25 +167,13 @@ window.setInterval(function(){newMessage();}, 5000);
         $.ajax({
             url: 'http://gpsapi.herokuapp.com/api/gpssnip',
             type: 'POST',
-            // dataType: 'json',
-            data: { gpssnip: { latitude: 99.99, longitude: 11.11, time: "late"} },
+            data: { gpssnip: { latitude: lat, longitude: long, time: "late"} },
             success: function (data) {
                 console.log("success")
             }
             
         });
 
-
-  // $.ajax({
-  //     type: "POST",
-  //     url: "/products",
-  //     data: { product: { name: "Filip", description: "whatever" } },
-  //     success:(data) ->
-  //       alert data.id
-  //       return false
-  //     error:(data) ->
-  //       return false
-  //   })
 
     };
 
