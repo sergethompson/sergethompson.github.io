@@ -3,6 +3,8 @@ var longitude;
 var dataX;
 var domState = "OFF";
 var herokuAppData;
+///////////////////////bike data json file
+var dataJson;
 
 $( window ).scroll(function() {
 	var scroll = $(window).scrollTop();
@@ -28,7 +30,7 @@ function showPosition(position)
 	latitude = position.coords.latitude;
 	longitude = position.coords.longitude; 
 };
-
+getLocation();
 
 
 window.addEventListener("deviceorientation", handleOrientation, true);
@@ -106,10 +108,7 @@ if( (gammaStateToo || gammaState) && betaState && domState === "OFF" ){
   // Do stuff with the new orientation data
 };
 
-getLocation();
 
-///////////////////////bike data json file
-var dataJson;
 
 
 // gets data from json file then empties and appends information to dom
