@@ -164,8 +164,7 @@ window.setInterval(function(){
         $.ajax({
             url: 'http://gpsapi.herokuapp.com/api/gpssnip',
             type: 'POST',
-            // data: { gpssnip: { latitude: lat, longitude: long, time: "late"} },
- 						data: gpssnip,
+            data: { gpssnip: { lat: latitude, long: longitude, time: "late"} },
             success: function (data) {
                 console.log("success")
             } 
