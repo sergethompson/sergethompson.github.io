@@ -30,6 +30,7 @@ function showPosition(position)
 	latitude = position.coords.latitude;
 	longitude = position.coords.longitude; 
 };
+
 getLocation();
 
 
