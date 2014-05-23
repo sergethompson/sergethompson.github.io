@@ -34,6 +34,7 @@
         highlightOnHover: false
     },
     fills: {
+           'USA': 'limegreen',
         // 'USA': '#EDDC4E',
         // 'QUAKE': '#9467bd',
         // 'PRK': '#EDDC4E',
@@ -56,64 +57,6 @@
     }
 });
 
-
-    //      var gps = [{
-    //     location: eq_data.earthquakes[0].region,
-    //     radius: eq_data.earthquakes[0].magnitude,
-    //     magnitude: eq_data.earthquakes[0].magnitude,
-    //     fillKey: 'QUAKE',
-    //     timedate: eq_data.earthquakes[0].timedate,
-    //     latitude: eq_data.earthquakes[0].lat,
-    //     longitude: eq_data.earthquakes[0].lon
-    // }, {
-    //     location: eq_data.earthquakes[1].region,
-    //     radius: eq_data.earthquakes[1].magnitude,
-    //     magnitude: eq_data.earthquakes[1].magnitude,
-    //     fillKey: 'QUAKE',
-    //     timedate: eq_data.earthquakes[1].timedate,
-    //     latitude: eq_data.earthquakes[1].lat,
-    //     longitude: eq_data.earthquakes[1].lon
-    // }
-    // ];
-
-//  this worked   var gps = [
-//   {
-//     name: 'Castle Bravo',
-//     radius: 25,
-//     yeild: 15000,
-//     country: 'USA',
-//     significance: 'First dry fusion fuel "staged" thermonuclear weapon; a serious nuclear fallout accident occurred',
-//     fillKey: 'USA',
-//     date: '1954-03-01',
-//     latitude: 11.415,
-//     longitude: 165.1619
-//   },{
-//     name: 'Tsar Bomba',
-//     radius: 70,
-//     yeild: 50000,
-//     country: 'USSR',
-//     fillKey: 'RUS',
-//     significance: 'Largest thermonuclear weapon ever tested—scaled down from its initial 100 Mt design by 50%',
-//     date: '1961-10-31',
-//     latitude: 73.482,
-//     longitude: 54.5854
-//   }
-// ];
-
-// $.getJSON( "http://gpsapi.herokuapp.com/api/gpssnip", function( data ) {
-//     gpsDataIn = data;
-// });
-
-
-// $.ajax({
-// url: "http://gpsapi.herokuapp.com/api/gpssnip",
-// type: "GET",
-// dataType: "json",
-// success: function (data) {
-//     alert(data);
-//     //gpsDataIn = data;
-// }
-// });
 
     $.ajax({
         url: "http://gpsapi.herokuapp.com/api/gpssnip",
@@ -139,20 +82,9 @@
       }
     });
 
-var gps = [{"id":1,"time":"Fri May 23 2014 09:36:09 GMT-0400 (EDT)","latitude":41.0474269,"longitude":-73.5703938,"radius":5.0,"created_at":"2014-05-23T13:36:10.405Z","updated_at":"2014-05-23T13:36:10.405Z"}];
 
 
- 
-    // var gps = [{"id":1,"time":"Wed May 21 2014 22:20:47 GMT-0400 (EDT)","latitude":41.0474247,"longitude":-73.5703735,"created_at":"2014-05-22T02:20:47.997Z","updated_at":"2014-05-22T02:20:47.997Z"},{"id":2,"time":"Wed May 21 2014 22:28:48 GMT-0400 (EDT)","latitude":41.0474214,"longitude":-73.5704135,"created_at":"2014-05-22T02:28:48.789Z","updated_at":"2014-05-22T02:28:48.789Z"}];
 
-
-   // var gps = eq_data.earthgps.reverse();                                               //API Data. Reversed so that earliest earthgps appear on the map first.
-
- 
-//-------------------------- draw bubbles for gps -----------------------------------
- 
-
-// $('#time').html("apples");
 
 	</script>
  

@@ -162,7 +162,8 @@ window.setInterval(function(){
             latitude:la,
             longitude:lo,
 				    time:Date(),
-				    radius: 5
+				    radius: 3,
+				    fillKey: 'USA'
         };
         $.ajax({
             url: 'http://gpsapi.herokuapp.com/api/gpssnip',
