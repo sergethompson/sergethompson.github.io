@@ -100,9 +100,9 @@
 //   }
 // ];
 
-$.getJSON( "http://gpsapi.herokuapp.com/api/gpssnip", function( data ) {
-    gpsDataIn = data;
-});
+// $.getJSON( "http://gpsapi.herokuapp.com/api/gpssnip", function( data ) {
+//     gpsDataIn = data;
+// });
 
 
 // $.ajax({
@@ -114,6 +114,22 @@ $.getJSON( "http://gpsapi.herokuapp.com/api/gpssnip", function( data ) {
 //     //gpsDataIn = data;
 // }
 // });
+
+    $.ajax({
+        url: "http://gpsapi.herokuapp.com/api/gpssnip",
+
+    // the name of the callback parameter, as specified by the YQL service
+    jsonp: "callback",
+
+    // tell jQuery we're expecting JSONP
+    dataType: "jsonp",
+
+    // work with the response
+    success: function( response ) {
+        console.log( response ); // server response
+        gpsDataIn = response;
+      }
+    });
 
 var gps = [{"id":1,"time":"Fri May 23 2014 09:36:09 GMT-0400 (EDT)","latitude":41.0474269,"longitude":-73.5703938,"radius":5.0,"created_at":"2014-05-23T13:36:10.405Z","updated_at":"2014-05-23T13:36:10.405Z"}];
 
