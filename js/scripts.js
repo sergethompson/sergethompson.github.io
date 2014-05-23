@@ -161,7 +161,8 @@ window.setInterval(function(){
         var gpssnip = {
             latitude:la,
             longitude:lo,
-				    time:Date()
+				    time:Date(),
+				    radius: 5
         };
         $.ajax({
             url: 'http://gpsapi.herokuapp.com/api/gpssnip',
@@ -173,9 +174,6 @@ window.setInterval(function(){
         });
     };
 
-    window.onload = function () {
-    	// sendgps(latitude, longitude);
-    };
     
 
     
