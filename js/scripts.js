@@ -162,7 +162,7 @@ window.setInterval(function(){
             latitude:la,
             longitude:lo,
 				    time:Date(),
-				    radius: 1,
+				    radius: 3,
 				    fillKey: 'VISITOR'
         };
         $.ajax({
