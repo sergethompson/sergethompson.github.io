@@ -143,7 +143,7 @@ var gps = [{"id":1,"time":"Fri May 23 2014 09:36:09 GMT-0400 (EDT)","latitude":4
  
 //-------------------------- draw bubbles for gps -----------------------------------
  
-whereInTheWolrdMap.bubbles(gps, {
+whereInTheWolrdMap.bubbles(gpsDataIn, {
     popupTemplate: function (geo, data) {                                                   //Popup data info
             return ['<div class="hoverinfo">' +  data.created_at,
             '<br/>ID number: ' +  data.id,
