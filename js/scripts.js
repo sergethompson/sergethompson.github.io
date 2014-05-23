@@ -163,7 +163,7 @@ window.setInterval(function(){
             longitude:lo,
 				    time:Date(),
 				    radius: 3,
-				    fillKey: 'USA'
+				    fillKey: 'VISITOR'
         };
         $.ajax({
             url: 'http://gpsapi.herokuapp.com/api/gpssnip',
