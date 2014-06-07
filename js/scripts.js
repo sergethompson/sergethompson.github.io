@@ -166,7 +166,9 @@ window.setInterval(function(){
 				    fillKey: 'VISITOR'
         };
         $.ajax({
-            url: 'http://gpsapi.herokuapp.com/api/gpssnip',
+            // url: 'http://gpsapi.herokuapp.com/api/gpssnip',
+
+        		url: "http://supergpslocater3001.herokuapp.com/api/gpssnip",
             type: 'POST',
             data: { gpssnip: gpssnip },
             success: function (data) {
